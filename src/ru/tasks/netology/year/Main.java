@@ -1,4 +1,4 @@
-package ru.tasks.year;
+package ru.tasks.netology.year;
 
 import java.util.Scanner;
 
@@ -29,6 +29,6 @@ public class Main {
     }
 
     public static boolean checkLeapYear(int year) {
-        return year % 400 == 0 && year % 100 != 0 || year % 4 == 0;
+        return (year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0);
     }
 }
